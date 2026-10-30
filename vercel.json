@@ -4,12 +4,21 @@
       "source": "/screen-time/",
       "destination": "/screen-time",
       "permanent": true
+    },
+    {
+      "source": "/screen-time-skills/",
+      "destination": "/screen-time-skills",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/screen-time",
       "destination": "/screen-time/index.html"
+    },
+    {
+      "source": "/screen-time-skills",
+      "destination": "/screen-time-skills/index.html"
     }
   ]
 }
