@@ -81,4 +81,21 @@
 
   window.addEventListener("scroll", updateSticky, { passive: true });
   updateSticky();
+  // Track Selar-bound CTA clicks without recording an unverified payment.
+  // Completed purchases must be tracked by Selar, not this landing page.
+  root.addEventListener("click", (event) => {
+    const target = event.target;
+    const link = target && typeof target.closest === "function"
+      ? target.closest('a[data-pnp-btn][href^="https://selar.com/"]')
+      : null;
+    if (!link || typeof window.fbq !== "function") {
+      return;
+    }
+
+    window.fbq("trackCustom", "CheckoutClick", {
+      content_name: "The Phone Is Not The Problem",
+      page_variant: "screen-time-skills"
+    });
+  });
+
 })();
