@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/screen-time/",
+      "destination": "/screen-time",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/screen-time",
+      "destination": "/screen-time/index.html"
+    }
+  ]
+}
