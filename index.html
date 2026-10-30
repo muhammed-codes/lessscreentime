@@ -1,390 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#F7F3EB">
-<meta name="description" content="The Phone Is Not The Problem: a practical parent's guide to healthier screen habits and useful digital skills, plus six family tools.">
-<title>The Phone Is Not The Problem — A Parent's Guide</title>
-<style>html,body{margin:0;padding:0;width:100%;min-height:100%;background:#F7F3EB}body{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style>
-<style>
-.pnp{background:#F7F3EB;color:#22211F;font-family:Arial,Helvetica,sans-serif;font-size:18px;line-height:1.7;width:100%;max-width:100%;overflow-x:clip}
-.pnp *{box-sizing:border-box}
-.pnp img{max-width:100%;height:auto}
-.pnp-w{max-width:800px;margin:0 auto;padding:0 20px 110px}
-.pnp h1,.pnp h2,.pnp h3{font-family:Georgia,"Times New Roman",serif;color:#22211F;line-height:1.2;margin:0 0 16px}
-.pnp h1{font-size:34px}
-.pnp h2{font-size:27px;margin-bottom:18px}
-.pnp h3{font-size:20px;margin-bottom:8px}
-.pnp p{margin:0 0 16px}
-.pnp ul{margin:0 0 16px;padding-left:22px}
-.pnp li{margin-bottom:8px}
-.pnp-hero{text-align:center;padding:40px 0 8px}
-.pnp-eye{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;color:#667C55;background:rgba(102,124,85,.14);border-radius:99px;padding:6px 14px;margin:0 0 20px}
-.pnp-hl{color:#C94D36}
-.pnp-sub{font-size:19px;color:#55524D}
-.pnp-by{font-size:14px;color:#55524D}
-.pnp-sec{margin-top:60px}
-.pnp-lab{font-size:13px;font-weight:700;letter-spacing:.06em;color:#C94D36;margin:0 0 8px}
-.pnp-big{font-family:Georgia,"Times New Roman",serif;font-size:22px;line-height:1.4}
-.pnp-note{border-left:4px solid #C6A16A;padding:4px 0 4px 16px;margin:24px 0}
-.pnp-card{background:#fff;border:1px solid #E6DFD0;border-radius:12px;padding:20px;margin:0 0 14px}
-.pnp-card p:last-child,.pnp-card ul:last-child{margin-bottom:0}
-.pnp-x{border-left:5px solid #C94D36}
-.pnp-n{display:inline-block;font-family:Georgia,serif;font-size:15px;font-weight:700;color:#fff;background:#C94D36;border-radius:99px;padding:2px 12px;margin-bottom:10px}
-.pnp-sage{background:rgba(102,124,85,.14);border-radius:12px;padding:20px;margin:0 0 14px}
-.pnp-sage p:last-child,.pnp-sage ul:last-child{margin-bottom:0}
-.pnp-ba{display:grid;gap:10px;margin:0 0 14px}
-.pnp-ba div{border-radius:12px;padding:16px 18px;font-size:16px}
-.pnp-b{background:#fff;border:1px solid #E6DFD0}
-.pnp-a{background:rgba(102,124,85,.14)}
-.pnp-ba b{display:block;font-size:12px;letter-spacing:.06em;margin-bottom:4px}
-.pnp-ch{display:inline-block;font-size:12px;font-weight:700;color:#22211F;background:#E9D9B8;border-radius:6px;padding:3px 10px;margin-bottom:8px}
-.pnp-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:12px 0 0}
-.pnp-chips span{font-size:13px;font-weight:700;background:#fff;border:1px solid #E6DFD0;border-radius:99px;padding:6px 12px}
-.pnp-ph{display:flex;align-items:center;justify-content:center;text-align:center;min-height:220px;background:#fff;border:2px dashed #C6A16A;border-radius:12px;color:#55524D;font-size:15px;padding:16px;margin:24px 0}
-.pnp-btn{display:block;width:100%;text-align:center;background:#C94D36;color:#fff;font-weight:700;font-size:18px;line-height:1.3;padding:18px 20px;border-radius:10px;text-decoration:none;margin:20px 0 8px;transition:background .2s}
-.pnp-btn:hover{background:#A93C28}
-.pnp-btn:focus-visible,.pnp summary:focus-visible{outline:3px solid #22211F;outline-offset:3px}
-.pnp-small{font-size:14px;color:#55524D;text-align:center;margin:0 0 16px}
-.pnp-tb{background:#fff;border:2px solid #C94D36;border-radius:12px;padding:16px;margin:20px 0;text-align:center}
-.pnp-tl{font-size:14px;font-weight:700;margin:0 0 10px}
-.pnp-segs{display:flex;justify-content:center;align-items:center;gap:8px}
-.pnp-seg{background:#22211F;color:#fff;border-radius:10px;min-width:72px;padding:8px 6px}
-.pnp-seg b{display:block;font-family:Georgia,serif;font-size:32px;line-height:1.1;font-variant-numeric:tabular-nums}
-.pnp-seg span{font-size:11px;letter-spacing:.06em}
-.pnp-col{font-size:26px;font-weight:700}
-.pnp-price{text-align:center;background:#fff;border:2px solid #C6A16A;border-radius:14px;padding:24px 20px;margin:24px 0}
-.pnp-old{font-size:20px;color:#55524D;text-decoration:line-through;margin:0}
-.pnp-now{font-family:Georgia,serif;font-size:52px;font-weight:700;line-height:1.1;margin:4px 0 8px}
-.pnp-msg{font-size:15px;color:#55524D;margin:0}
-.pnp-list{list-style:none;padding:0;text-align:left}
-.pnp-list li{padding-left:28px;position:relative;margin-bottom:8px;font-size:16px}
-.pnp-list li:before{content:"✓";position:absolute;left:0;color:#667C55;font-weight:700}
-.pnp-g{display:flex;gap:16px;align-items:flex-start;background:rgba(102,124,85,.14);border-radius:12px;padding:20px;margin:0 0 14px}
-.pnp-g>div{min-width:0}
-.pnp-g a,.pnp details a{color:#C94D36;overflow-wrap:anywhere}
-.pnp-g i{font-style:normal;font-size:34px;line-height:1}
-.pnp details{background:#fff;border:1px solid #E6DFD0;border-radius:12px;padding:0 20px;margin-bottom:10px}
-.pnp summary{cursor:pointer;font-weight:700;padding:16px 0}
-.pnp details p{margin-bottom:16px}
-.pnp-stick{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#22211F;color:#fff;padding:10px 14px;display:none;align-items:center;justify-content:space-between;gap:10px}
-.pnp-stick.on{display:flex}
-.pnp-stick p{margin:0;font-size:13px;line-height:1.3}
-.pnp-stick s{color:#C6A16A}
-.pnp-stick b{font-size:20px}
-.pnp-stick a{background:#C94D36;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-radius:8px;padding:12px 18px;white-space:nowrap}
-.pnp-stick a:focus-visible{outline:3px solid #fff;outline-offset:2px}
-.pnp-img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
-.pnp-cover{max-width:300px;margin:20px auto;box-shadow:0 8px 24px rgba(34,33,31,.18)}
-.pnp-tool{background:#fff;border:1px solid #E6DFD0;border-radius:12px;padding:16px;margin:0 0 16px}
-.pnp-tool img{display:block;width:100%;max-width:380px;height:auto;max-height:520px;object-fit:contain;margin:0 auto 16px}
-.pnp-tool p{margin:0 0 10px}
-.pnp-tool p:last-child{margin:0}
-.pnp-why{font-size:16px;background:rgba(102,124,85,.14);border-radius:8px;padding:10px 14px}
-.pnp-ws{background:#fff;border:2px solid #22211F;border-radius:6px;padding:20px;margin:0 0 16px}
-.pnp-ws h3{font-size:18px}
-.pnp-ws label{display:block;font-size:15px;font-weight:700;margin:14px 0 0}
-.pnp-line{border-bottom:2px solid #22211F;height:34px}
-.pnp-pg{background:#fff;border-left:5px solid #667C55;border-radius:6px;padding:18px 20px;margin:0 0 16px;font-family:Georgia,serif;font-size:19px;line-height:1.6}
-.pnp-pg p{margin:0 0 10px}
-.pnp-pg p:last-child{margin:0}
-.pnp-src{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:.06em;color:#667C55;margin:0 0 8px}
-.pnp-tl3{border-left:3px solid #C6A16A;padding-left:18px;margin:0 0 20px}
-.pnp-tl3 h3{margin-bottom:4px}
-@media (min-width:700px){
-.pnp h1{font-size:46px}
-.pnp h2{font-size:32px}
-.pnp-btn{max-width:480px;margin:20px auto 8px}
-.pnp-ba{grid-template-columns:1fr 1fr}
-}
-@media (max-width:480px){
-.pnp{font-size:18px;line-height:1.65}
-.pnp-w{padding:0 18px 110px}
-.pnp-hero{padding:32px 0 8px}
-.pnp h1{font-size:clamp(29px,8.2vw,34px);line-height:1.2}
-.pnp h2{font-size:27px}
-.pnp-sub{font-size:18px;line-height:1.5}
-.pnp-sec{margin-top:48px}
-.pnp-tb{padding:16px 10px}
-.pnp-seg{min-width:66px}
-.pnp-seg b{font-size:29px}
-.pnp-stick a{font-size:14px;padding:12px 14px}
-.pnp-stick b{font-size:18px}
-}
-@media (max-width:350px){
-.pnp-w{padding-left:14px;padding-right:14px}
-.pnp h1{font-size:28px}
-.pnp-segs{gap:5px}
-.pnp-seg{min-width:60px}
-.pnp-stick a{font-size:13px;padding:11px 10px}
-}
-</style>
-</head>
-<body>
-<div class="pnp">
-<div class="pnp-w">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#F7F3EB">
+    <meta name="description" content="The Phone Is Not The Problem: a practical parent's guide to healthier screen habits and useful digital skills, plus six family tools.">
+    <title>The Phone Is Not The Problem — A Parent's Guide</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="pnp">
+      <div class="pnp-w">
 
-<header class="pnp-hero">
-<span class="pnp-eye">FOR THE MUM WHO IS TIRED OF SAYING “DROP THAT PHONE”</span>
-<h1>What If The Hours Your Child Loses To The Phone Could Become <span class="pnp-hl">Skills You Will Be Proud Of</span>, Without Turning Your Home Into A Battlefield?</h1>
-<p class="pnp-sub">A practical guide to reducing endless scrolling, protecting sleep and schoolwork, and turning the screen time your child keeps into useful skills—without constant fights at home.</p>
-<p class="pnp-by">By Muhammed Bello</p>
-<div class="pnp-tb">
-<p class="pnp-tl" data-pnp-lab>Your 5-hour decision reminder</p>
-<div class="pnp-segs"><div class="pnp-seg"><b data-pnp-h>05</b><span>HRS</span></div><span class="pnp-col">:</span><div class="pnp-seg"><b data-pnp-m>00</b><span>MIN</span></div><span class="pnp-col">:</span><div class="pnp-seg"><b data-pnp-s>00</b><span>SEC</span></div></div>
-</div>
-<a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Get The Book And 6 Bonuses (₦4,950)</a>
-<p class="pnp-small">You will go to Selar to complete your payment.</p>
-<div class="pnp-chips"><span>Digital eBook</span><span>6 bonuses included</span><span>7-day guarantee</span><span>No subscription</span></div>
-</header>
+        <header class="pnp-hero">
+          <span class="pnp-eye">FOR THE MUM WHO IS TIRED OF SAYING “DROP THAT PHONE”</span>
+          <h1>What If The Hours Your Child Loses To The Phone Could Become <span class="pnp-hl">Skills You Will Be Proud Of</span>, Without Turning Your Home Into A Battlefield?</h1>
+          <p class="pnp-sub">A practical guide to reducing endless scrolling, protecting sleep and schoolwork, and turning the screen time your child keeps into useful skills—without constant fights at home.</p>
+          <p class="pnp-by">By Muhammed Bello</p>
+          <div class="pnp-tb">
+            <p class="pnp-tl" data-pnp-lab>Your 5-hour decision reminder</p>
+            <div class="pnp-segs">
+              <div class="pnp-seg"><b data-pnp-h>05</b><span>HRS</span></div>
+              <span class="pnp-col">:</span>
+              <div class="pnp-seg"><b data-pnp-m>00</b><span>MIN</span></div>
+              <span class="pnp-col">:</span>
+              <div class="pnp-seg"><b data-pnp-s>00</b><span>SEC</span></div>
+            </div>
+          </div>
+          <a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Get The Book And 6 Bonuses (₦4,950)</a>
+          <p class="pnp-small">You will go to Selar to complete your payment.</p>
+          <div class="pnp-chips"><span>Digital eBook</span><span>6 bonuses included</span><span>7-day guarantee</span><span>No subscription</span></div>
+        </header>
 
-<section class="pnp-sec">
-<p>Dear Mummy,</p>
-<p>Let me describe your evening. Tell me if I am wrong.</p>
-<p>Your child comes back from school. Eats. Drops the bag somewhere. Then picks up the phone.</p>
-<p>A little while later you ask:</p>
-<p><em>“Have you done your assignment?”</em></p>
-<p><em>“Yes.”</em></p>
-<p>Thirty minutes pass. Still on the phone. Your voice changes.</p>
-<p><em>“Since you came back, this phone has been in your hand. Did you hear me?”</em></p>
-<p><em>“Yes, Mummy.”</em></p>
-<p>Ten more minutes. Still there. So now:</p>
-<p><em>“DROP THAT PHONE!”</em></p>
-<p><em>“Mummy, just five minutes.”</em></p>
-<p>You know those five minutes. They become twenty.</p>
-<p>So you collect it. The face changes. The whole house knows. They beg. They promise: <em>“I won’t do it again.”</em></p>
-<p>Tomorrow, same thing. Different day. Same argument.</p>
-<p>And tonight, when you think everybody is asleep, there is still light under their door.</p>
-<p>You are tired. Not just tired of the phone. Tired of being the only one who cares. Tired of being the bad person in your own house.</p>
-<p>I know that tiredness. I grew up on the other side of that sentence, hearing <em>“Go and read your book.”</em> My father is a baker, not a technology person, and to him a child on a screen was a child wasting time. I have watched people I love carry the same worry, evening after evening.</p>
-<p>So let me ask you something nobody asks you.</p>
-</section>
+        <section class="pnp-sec">
+          <p>Dear Mummy,</p>
+          <p>Let me describe your evening. Tell me if I am wrong.</p>
+          <p>Your child comes back from school. Eats. Drops the bag somewhere. Then picks up the phone.</p>
+          <p>A little while later you ask:</p>
+          <p><em>“Have you done your assignment?”</em></p>
+          <p><em>“Yes.”</em></p>
+          <p>Thirty minutes pass. Still on the phone. Your voice changes.</p>
+          <p><em>“Since you came back, this phone has been in your hand. Did you hear me?”</em></p>
+          <p><em>“Yes, Mummy.”</em></p>
+          <p>Ten more minutes. Still there. So now:</p>
+          <p><em>“DROP THAT PHONE!”</em></p>
+          <p><em>“Mummy, just five minutes.”</em></p>
+          <p>You know those five minutes. They become twenty.</p>
+          <p>So you collect it. The face changes. The whole house knows. They beg. They promise: <em>“I won’t do it again.”</em></p>
+          <p>Tomorrow, same thing. Different day. Same argument.</p>
+          <p>And tonight, when you think everybody is asleep, there is still light under their door.</p>
+          <p>You are tired. Not just tired of the phone. Tired of being the only one who cares. Tired of being the bad person in your own house.</p>
+          <p>I know that tiredness. I grew up on the other side of that sentence, hearing <em>“Go and read your book.”</em> My father is a baker, not a technology person, and to him a child on a screen was a child wasting time. I have watched people I love carry the same worry, evening after evening.</p>
+          <p>So let me ask you something nobody asks you.</p>
+        </section>
 
-<section class="pnp-sec">
-<h2>What If The Goal Is Bigger Than Tonight?</h2>
-<p>You can win tonight. Take the phone. Switch off the Wi-Fi. Shout. Maybe they finally sleep.</p>
-<p>But a child who only stops because you shouted may have learned something that is not discipline:</p>
-<p class="pnp-big">“Continue until Mummy becomes serious.”</p>
-<p>And here is what should worry you more than tonight. You cannot supervise every decision for eighteen years, then say on their birthday: <em>“Now control yourself.”</em> One day there will be a hostel, a new city, their own password, and nobody checking whether they slept at midnight or at three.</p>
-<p>The window where your voice still reaches them is open now. It does not stay open forever.</p>
-</section>
+        <section class="pnp-sec">
+          <h2>What If The Goal Is Bigger Than Tonight?</h2>
+          <p>You can win tonight. Take the phone. Switch off the Wi-Fi. Shout. Maybe they finally sleep.</p>
+          <p>But a child who only stops because you shouted may have learned something that is not discipline:</p>
+          <p class="pnp-big">“Continue until Mummy becomes serious.”</p>
+          <p>And here is what should worry you more than tonight. You cannot supervise every decision for eighteen years, then say on their birthday: <em>“Now control yourself.”</em> One day there will be a hostel, a new city, their own password, and nobody checking whether they slept at midnight or at three.</p>
+          <p>The window where your voice still reaches them is open now. It does not stay open forever.</p>
+        </section>
 
-<section class="pnp-sec">
-<h2>The Night My Younger Sister Reached Out</h2>
-<p>There is a conversation I keep thinking about. It was with my younger cousin, whom I call my sister. We were living in different states.</p>
-<p>She had tried calling me earlier, but I missed it. Later, we started chatting. At first it was an ordinary exchange: <em>“How are you?”</em> <em>“I’m fine.”</em> But as we talked, she began to tell me how she really felt.</p>
-<p>She was lonely. She felt she had nobody to talk to. Someone at home she wanted to spend time with was often busy on her own phone. Imagine that for a moment. People were around her, but she was reaching out to somebody in another state just to have someone listen.</p>
-<p>What she needed that night was not another app or more data. She needed to feel that somebody had time for her.</p>
-<p>If her mother or another older person at home had simply collected her phone, our conversation might have ended. But her loneliness would not have ended with it. She would still have needed someone to talk to, and she might have lost the one way she was reaching out.</p>
-<p>And I think about how easily this can happen in a family. You work hard. You pay school fees. You make sure there is food, clothing and everything the children need. All of that matters. But sometimes a child is quietly waiting for something money cannot buy: a parent who sits down, listens without rushing, and genuinely wants to know how their day went.</p>
-<p>I am not saying that every child on a phone is lonely. I am saying that when we remove the phone, we should also ask what the child was looking for there. Attention? Comfort? Company? A feeling of belonging?</p>
-<p>That is one reason I included <strong>50 Simple Screen-Free Family Activities for Nigerian Homes</strong> among the six bonuses. They are simple, mostly inexpensive ways for parents and children—and brothers and sisters—to talk, play, laugh and spend time together. Not just something to keep a child busy without a screen. Something that helps the family grow closer.</p>
-<p>Because taking four hours of screen time down to one is only part of the work. What fills those three hours matters too. And even the time they keep on the phone needs sensible limits.</p>
-</section>
+        <section class="pnp-sec">
+          <h2>The Night My Younger Sister Reached Out</h2>
+          <p>There is a conversation I keep thinking about. It was with my younger cousin, whom I call my sister. We were living in different states.</p>
+          <p>She had tried calling me earlier, but I missed it. Later, we started chatting. At first it was an ordinary exchange: <em>“How are you?”</em> <em>“I’m fine.”</em> But as we talked, she began to tell me how she really felt.</p>
+          <p>She was lonely. She felt she had nobody to talk to. Someone at home she wanted to spend time with was often busy on her own phone. Imagine that for a moment. People were around her, but she was reaching out to somebody in another state just to have someone listen.</p>
+          <p>What she needed that night was not another app or more data. She needed to feel that somebody had time for her.</p>
+          <p>If her mother or another older person at home had simply collected her phone, our conversation might have ended. But her loneliness would not have ended with it. She would still have needed someone to talk to, and she might have lost the one way she was reaching out.</p>
+          <p>And I think about how easily this can happen in a family. You work hard. You pay school fees. You make sure there is food, clothing and everything the children need. All of that matters. But sometimes a child is quietly waiting for something money cannot buy: a parent who sits down, listens without rushing, and genuinely wants to know how their day went.</p>
+          <p>I am not saying that every child on a phone is lonely. I am saying that when we remove the phone, we should also ask what the child was looking for there. Attention? Comfort? Company? A feeling of belonging?</p>
+          <p>That is one reason I included <strong>50 Simple Screen-Free Family Activities for Nigerian Homes</strong> among the six bonuses. They are simple, mostly inexpensive ways for parents and children—and brothers and sisters—to talk, play, laugh and spend time together. Not just something to keep a child busy without a screen. Something that helps the family grow closer.</p>
+          <p>Because taking four hours of screen time down to one is only part of the work. What fills those three hours matters too. And even the time they keep on the phone needs sensible limits.</p>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">YES, TOO MUCH SCREEN TIME STILL MATTERS</p>
-<h2>“But What If My Child Is Learning And Still Spending Too Much Time On The Phone?”</h2>
-<p>Then we still need to make a change. I am not asking you to let your child stay online all day just because they can say, <em>“Mummy, I'm learning.”</em></p>
-<p>Imagine your daughter is spending three hours learning video editing. She really is learning. But now her assignment is unfinished, she sleeps too late, and family time has disappeared. The skill is useful. The cost is real. <strong>Both can be true.</strong></p>
-<p>That is why the book does not stop at asking what your child is doing on the phone. It helps you ask three better questions:</p>
-<div class="pnp-card pnp-x"><p><strong>1. What is your child doing?</strong> Learning, creating, studying, relaxing—or scrolling without control?</p><p><strong>2. What is it producing?</strong> Better understanding, finished work, a small project—or nothing they can explain or show?</p><p><strong>3. What is it costing?</strong> Sleep, schoolwork, exercise, chores, family conversations or the ability to stop?</p></div>
-<p>If learning a useful skill is affecting homework, the answer does not have to be banning the skill. It may be setting a study-first rule and giving that interest a realistic time slot. If entertainment is swallowing the whole evening, you can begin reducing it and make room for something better.</p>
-<p>That is what the guide and the accompanying <strong>7-Day Family Screen-Time Reset, Weekly Screen-Time Planner and Family Agreement</strong> help you put into practice. You can protect the essentials while still encouraging healthy interests.</p>
-<p class="pnp-big"><strong>The aim is not more screen time. It is less uncontrolled screen time—and better use of the time that remains.</strong></p>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">YES, TOO MUCH SCREEN TIME STILL MATTERS</p>
+          <h2>“But What If My Child Is Learning And Still Spending Too Much Time On The Phone?”</h2>
+          <p>Then we still need to make a change. I am not asking you to let your child stay online all day just because they can say, <em>“Mummy, I'm learning.”</em></p>
+          <p>Imagine your daughter is spending three hours learning video editing. She really is learning. But now her assignment is unfinished, she sleeps too late, and family time has disappeared. The skill is useful. The cost is real. <strong>Both can be true.</strong></p>
+          <p>That is why the book does not stop at asking what your child is doing on the phone. It helps you ask three better questions:</p>
+          <div class="pnp-card pnp-x">
+            <p><strong>1. What is your child doing?</strong> Learning, creating, studying, relaxing—or scrolling without control?</p>
+            <p><strong>2. What is it producing?</strong> Better understanding, finished work, a small project—or nothing they can explain or show?</p>
+            <p><strong>3. What is it costing?</strong> Sleep, schoolwork, exercise, chores, family conversations or the ability to stop?</p>
+          </div>
+          <p>If learning a useful skill is affecting homework, the answer does not have to be banning the skill. It may be setting a study-first rule and giving that interest a realistic time slot. If entertainment is swallowing the whole evening, you can begin reducing it and make room for something better.</p>
+          <p>That is what the guide and the accompanying <strong>7-Day Family Screen-Time Reset, Weekly Screen-Time Planner and Family Agreement</strong> help you put into practice. You can protect the essentials while still encouraging healthy interests.</p>
+          <p class="pnp-big"><strong>The aim is not more screen time. It is less uncontrolled screen time—and better use of the time that remains.</strong></p>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">WHAT THOSE HOURS COULD BECOME</p>
-<h2>Now Imagine Those Same Hours Building Something</h2>
-<p>I have an uncle who is a software developer. He has two sons.</p>
-<p>They are still teenagers. Not graduates. Teenagers. And they have built an app with real users. Some months ago they were celebrating 200 users.</p>
-<p>They were exposed to software very early. They still played games like normal children. But their father supervised their access, kept boundaries, and showed them that a screen is not only somewhere you <strong>watch</strong> other people’s work. It is somewhere you can <strong>make</strong> something of your own.</p>
-<p>I build software too. I built my own. But I was much older than those boys when I started. They were ahead of me, at an age when most children are only watching.</p>
-<p>Your child does not have to become a programmer. Please, no. Maybe they love football and could learn to analyse a match. Maybe they love drawing and could make their first digital illustration. Maybe it is fashion, writing, films, cooking. Whatever they already love, the same phone can help them learn it.</p>
-<p>Picture your child at 15, having made something. At 17, knowing how to research properly, write clearly, design, edit, or organise a project. At university, arriving as the student who already knows how to teach themselves, manage their time, and finish what they start. Later, as an adult who has something real to offer.</p>
-<p>And picture the day they show you something they made. Not something they watched. Something they made. Someone asks, <em>“Who did this?”</em> and you say, <em>“My child.”</em></p>
-<p>That is what a proud mother feels. And it can start from the exact hours that are now giving you headaches.</p>
-<p>I will be honest. I cannot promise what any child will become. But a child who learns to create has a head start in school, in university and at work, because the habits they build now follow them.</p>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">WHAT THOSE HOURS COULD BECOME</p>
+          <h2>Now Imagine Those Same Hours Building Something</h2>
+          <p>I have an uncle who is a software developer. He has two sons.</p>
+          <p>They are still teenagers. Not graduates. Teenagers. And they have built an app with real users. Some months ago they were celebrating 200 users.</p>
+          <p>They were exposed to software very early. They still played games like normal children. But their father supervised their access, kept boundaries, and showed them that a screen is not only somewhere you <strong>watch</strong> other people’s work. It is somewhere you can <strong>make</strong> something of your own.</p>
+          <p>I build software too. I built my own. But I was much older than those boys when I started. They were ahead of me, at an age when most children are only watching.</p>
+          <p>Your child does not have to become a programmer. Please, no. Maybe they love football and could learn to analyse a match. Maybe they love drawing and could make their first digital illustration. Maybe it is fashion, writing, films, cooking. Whatever they already love, the same phone can help them learn it.</p>
+          <p>Picture your child at 15, having made something. At 17, knowing how to research properly, write clearly, design, edit, or organise a project. At university, arriving as the student who already knows how to teach themselves, manage their time, and finish what they start. Later, as an adult who has something real to offer.</p>
+          <p>And picture the day they show you something they made. Not something they watched. Something they made. Someone asks, <em>“Who did this?”</em> and you say, <em>“My child.”</em></p>
+          <p>That is what a proud mother feels. And it can start from the exact hours that are now giving you headaches.</p>
+          <p>I will be honest. I cannot promise what any child will become. But a child who learns to create has a head start in school, in university and at work, because the habits they build now follow them.</p>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">THE BOOK</p>
-<h2>That Is Why I Wrote “The Phone Is Not The Problem”</h2>
-<p>It shows you how to cut back on uncontrolled scrolling, set workable limits, and turn some of the screen time your child keeps into useful skills—while protecting sleep, schoolwork and family life, without turning your home into a battlefield or a barracks.</p>
-<img class="pnp-img pnp-cover" src="https://www.image2url.com/r2/default/images/1793293915772-2cb8ccd2-7d13-43d6-b771-b61c2b4167ba.png" alt="The Phone Is Not the Problem eBook cover" loading="eager" decoding="async" referrerpolicy="no-referrer">
-<p>It will not make your child obedient in seven days, and it does not say unlimited screen time is fine because “I’m learning”. It gives you a clear way to see what is happening, one small project your child chooses, and a boundary you agree on while everyone is calm.</p>
-<p>You get the complete eBook plus six practical bonuses, one payment, no subscription, and a 7-day money-back guarantee.</p>
-<a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Yes, I Want Those Hours To Count (₦4,950)</a>
-<p class="pnp-small">You will go to Selar to complete your payment. Keep reading if you want to see how it works first.</p>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">THE BOOK</p>
+          <h2>That Is Why I Wrote “The Phone Is Not The Problem”</h2>
+          <p>It shows you how to cut back on uncontrolled scrolling, set workable limits, and turn some of the screen time your child keeps into useful skills—while protecting sleep, schoolwork and family life, without turning your home into a battlefield or a barracks.</p>
+          <img class="pnp-img pnp-cover" src="https://www.image2url.com/r2/default/images/1793293915772-2cb8ccd2-7d13-43d6-b771-b61c2b4167ba.png" alt="The Phone Is Not the Problem eBook cover" loading="eager" decoding="async" referrerpolicy="no-referrer">
+          <p>It will not make your child obedient in seven days, and it does not say unlimited screen time is fine because “I’m learning”. It gives you a clear way to see what is happening, one small project your child chooses, and a boundary you agree on while everyone is calm.</p>
+          <p>You get the complete eBook plus six practical bonuses, one payment, no subscription, and a 7-day money-back guarantee.</p>
+          <a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Yes, I Want Those Hours To Count (₦4,950)</a>
+          <p class="pnp-small">You will go to Selar to complete your payment. Keep reading if you want to see how it works first.</p>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">A LESSON TO KEEP, EVEN IF YOU NEVER BUY</p>
-<h2>The Digital Freedom Ladder: How To Stop Controlling Forever And Start Teaching</h2>
-<p>Most mums have two settings: take the phone, or give it back and hope. Both leave your child with nothing to work towards. This is the idea from the book I would want you to have, even if you never buy it.</p>
-<p>Think of your child’s phone freedom as a ladder with three steps.</p>
-<div class="pnp-card"><h3>Level 1. High supervision</h3><p>Where you start if trust is low. Phones stay in common areas at night. You know the main apps. New apps need permission. Check-ins are more frequent. This is not punishment forever. It is structure.</p></div>
-<div class="pnp-card"><h3>Level 2. Guided freedom</h3><p>They have shown some responsibility, so they get more privacy, less checking and more choice over when they use the device. Safety, sleep and school stay protected.</p></div>
-<div class="pnp-card"><h3>Level 3. Earned independence</h3><p>They keep agreements, handle schoolwork, sleep properly, tell the truth and come to you when something goes wrong. Now you step back. Not because you stopped caring, but because the goal was always to teach them to manage themselves.</p></div>
-<p><strong>When trust breaks, move down the ladder. Do not ban the phone for life.</strong> Say it clearly: <em>“For the next two weeks, the phone stays outside the bedroom at night. If the routine is stable again, we will review it.”</em> Now your child knows what changed, why it changed, and what earns freedom back.</p>
-<p>Then try the conversation that ends the battle. Ask: <em>“What do you think I worry about when it comes to your phone?”</em> Let them answer. Ask: <em>“What do you think I am too strict about?”</em> Listen. Then say:</p>
-<p class="pnp-big">“I don’t want to control your phone forever. I want you to become somebody I don’t need to control.”</p>
-<p>A 12-year-old should not have the same rules at 16. When responsibility grows, freedom should grow with it. That one change turns “you don’t trust me” into “here is how I earn it”.</p>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">A LESSON TO KEEP, EVEN IF YOU NEVER BUY</p>
+          <h2>The Digital Freedom Ladder: How To Stop Controlling Forever And Start Teaching</h2>
+          <p>Most mums have two settings: take the phone, or give it back and hope. Both leave your child with nothing to work towards. This is the idea from the book I would want you to have, even if you never buy it.</p>
+          <p>Think of your child’s phone freedom as a ladder with three steps.</p>
+          <div class="pnp-card">
+            <h3>Level 1. High supervision</h3>
+            <p>Where you start if trust is low. Phones stay in common areas at night. You know the main apps. New apps need permission. Check-ins are more frequent. This is not punishment forever. It is structure.</p>
+          </div>
+          <div class="pnp-card">
+            <h3>Level 2. Guided freedom</h3>
+            <p>They have shown some responsibility, so they get more privacy, less checking and more choice over when they use the device. Safety, sleep and school stay protected.</p>
+          </div>
+          <div class="pnp-card">
+            <h3>Level 3. Earned independence</h3>
+            <p>They keep agreements, handle schoolwork, sleep properly, tell the truth and come to you when something goes wrong. Now you step back. Not because you stopped caring, but because the goal was always to teach them to manage themselves.</p>
+          </div>
+          <p><strong>When trust breaks, move down the ladder. Do not ban the phone for life.</strong> Say it clearly: <em>“For the next two weeks, the phone stays outside the bedroom at night. If the routine is stable again, we will review it.”</em> Now your child knows what changed, why it changed, and what earns freedom back.</p>
+          <p>Then try the conversation that ends the battle. Ask: <em>“What do you think I worry about when it comes to your phone?”</em> Let them answer. Ask: <em>“What do you think I am too strict about?”</em> Listen. Then say:</p>
+          <p class="pnp-big">“I don’t want to control your phone forever. I want you to become somebody I don’t need to control.”</p>
+          <p>A 12-year-old should not have the same rules at 16. When responsibility grows, freedom should grow with it. That one change turns “you don’t trust me” into “here is how I earn it”.</p>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">WHAT CHANGES FOR YOU</p>
-<h2>What Your Home Can Look Like After You Use This</h2>
-<div class="pnp-tl3"><h3>In your first week</h3><p>You name the one habit hurting your home most. Your child chooses one small thing they want to learn to make. You agree one clear rule while everyone is calm, so tonight is not another argument.</p></div>
-<div class="pnp-tl3"><h3>In the first month</h3><p>The rule exists before the fight starts, so there is less to shout about. “I’m learning” stops ending the conversation, because you can ask to see a small piece of work. You know where your child sits on the ladder, and exactly what earns more freedom.</p></div>
-<div class="pnp-tl3"><h3>Over the years</h3><p>A child who has made things, who can manage their time and their phone, and who arrives at university and work with real skills and self-control. These are directions to work towards, not promises. Change depends on your child, your home and your follow-through.</p></div>
-<a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Get The Book And 6 Bonuses (₦4,950)</a>
-<p class="pnp-small">You will go to Selar to complete your payment.</p>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">WHAT CHANGES FOR YOU</p>
+          <h2>What Your Home Can Look Like After You Use This</h2>
+          <div class="pnp-tl3">
+            <h3>In your first week</h3>
+            <p>You name the one habit hurting your home most. Your child chooses one small thing they want to learn to make. You agree one clear rule while everyone is calm, so tonight is not another argument.</p>
+          </div>
+          <div class="pnp-tl3">
+            <h3>In the first month</h3>
+            <p>The rule exists before the fight starts, so there is less to shout about. “I’m learning” stops ending the conversation, because you can ask to see a small piece of work. You know where your child sits on the ladder, and exactly what earns more freedom.</p>
+          </div>
+          <div class="pnp-tl3">
+            <h3>Over the years</h3>
+            <p>A child who has made things, who can manage their time and their phone, and who arrives at university and work with real skills and self-control. These are directions to work towards, not promises. Change depends on your child, your home and your follow-through.</p>
+          </div>
+          <a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Get The Book And 6 Bonuses (₦4,950)</a>
+          <p class="pnp-small">You will go to Selar to complete your payment.</p>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">SEE INSIDE BEFORE YOU DECIDE</p>
-<h2>Sample Excerpts And A Practice Worksheet</h2>
-<p>You should not have to buy blindly. Here are styled excerpts and an example exercise showing the kind of guidance in the book. These are text previews, not screenshots of the PDF pages.</p>
-<div class="pnp-pg"><p class="pnp-src">FROM CHAPTER 4</p><p>Your child does not need to monetise everything.</p><p>Your daughter can draw because she likes drawing. Your son can play football because football is fun. A game can remain a game.</p><p>Childhood should still feel like childhood.</p></div>
-<div class="pnp-ws"><p class="pnp-src">SAMPLE WORKSHEET, FROM CHAPTER 4</p><h3>Try this this week</h3><p>Choose one child. Ask: <em>“What do you actually enjoy doing online?”</em> Listen first. Then ask: <em>“Is there something connected to that which you would like to know how to make yourself?”</em> Then complete this:</p><label>My child loves:</label><div class="pnp-line"></div><label>A useful skill beside that interest is:</label><div class="pnp-line"></div><label>A free or affordable place to begin learning is:</label><div class="pnp-line"></div><label>One tiny thing they can create within seven days is:</label><div class="pnp-line"></div><p style="margin-top:16px">Keep the first project small. Very small. Something finishable.</p></div>
-<div class="pnp-pg"><p class="pnp-src">FROM CHAPTER 4</p><p>The goal this week is not mastery. The goal is for your child to experience the difference between “I watched this” and “I made this.”</p><p>Once a child understands that difference, the phone starts becoming something else. A tool. A workshop. A classroom.</p></div>
-<div class="pnp-sage"><h3>Why you can trust what is inside</h3><ul><li>It comes from real life: my uncle’s two teenage sons who built an app with real users, and what I see working in a school.</li><li>It does not promise miracles. It says plainly where it will not work, and when you need urgent help instead of an eBook.</li><li>You can request a refund within seven days if you try the guidance and it does not help. The refund conditions are explained below.</li></ul></div>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">SEE INSIDE BEFORE YOU DECIDE</p>
+          <h2>Sample Excerpts And A Practice Worksheet</h2>
+          <p>You should not have to buy blindly. Here are styled excerpts and an example exercise showing the kind of guidance in the book. These are text previews, not screenshots of the PDF pages.</p>
+          <div class="pnp-pg">
+            <p class="pnp-src">FROM CHAPTER 4</p>
+            <p>Your child does not need to monetise everything.</p>
+            <p>Your daughter can draw because she likes drawing. Your son can play football because football is fun. A game can remain a game.</p>
+            <p>Childhood should still feel like childhood.</p>
+          </div>
+          <div class="pnp-ws">
+            <p class="pnp-src">SAMPLE WORKSHEET, FROM CHAPTER 4</p>
+            <h3>Try this this week</h3>
+            <p>Choose one child. Ask: <em>“What do you actually enjoy doing online?”</em> Listen first. Then ask: <em>“Is there something connected to that which you would like to know how to make yourself?”</em> Then complete this:</p>
+            <label>My child loves:</label>
+            <div class="pnp-line"></div>
+            <label>A useful skill beside that interest is:</label>
+            <div class="pnp-line"></div>
+            <label>A free or affordable place to begin learning is:</label>
+            <div class="pnp-line"></div>
+            <label>One tiny thing they can create within seven days is:</label>
+            <div class="pnp-line"></div>
+            <p style="margin-top:16px">Keep the first project small. Very small. Something finishable.</p>
+          </div>
+          <div class="pnp-pg">
+            <p class="pnp-src">FROM CHAPTER 4</p>
+            <p>The goal this week is not mastery. The goal is for your child to experience the difference between “I watched this” and “I made this.”</p>
+            <p>Once a child understands that difference, the phone starts becoming something else. A tool. A workshop. A classroom.</p>
+          </div>
+          <div class="pnp-sage">
+            <h3>Why you can trust what is inside</h3>
+            <ul>
+              <li>It comes from real life: my uncle’s two teenage sons who built an app with real users, and what I see working in a school.</li>
+              <li>It does not promise miracles. It says plainly where it will not work, and when you need urgent help instead of an eBook.</li>
+              <li>You can request a refund within seven days if you try the guidance and it does not help. The refund conditions are explained below.</li>
+            </ul>
+          </div>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">INCLUDED WITH THE BOOK</p>
-<h2>Your 6 Bonuses, And Why Each One Matters To You</h2>
-<div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294451786-679de647-cbde-4ad3-83c9-55b510db643b.png" alt="The 7-Day Family Screen-Time Reset" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>The 7-Day Family Screen-Time Reset</h3><p class="pnp-why">You will not be improvising. One step a day takes you from your biggest problem to a first family plan, so by day seven you have a plan, not another argument.</p></div>
-<div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294084118-1a37ab8e-9892-4a8b-b251-8b148a50d0ea.png" alt="The Family Screen-Time Agreement" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>The Family Screen-Time Agreement</h3><p class="pnp-why">The rule stops being something you shout at 10 p.m. You sit down and agree it together, so there is much less to fight about when the night comes.</p></div>
-<div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294232675-379970df-d52c-4ebf-9b1f-bca77e6a6216.png" alt="The Weekly Screen-Time Planner" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>The Weekly Screen-Time Planner</h3><p class="pnp-why">Schoolwork, rest, entertainment and device boundaries all get a place in the week. “Just five minutes” has nowhere left to hide.</p></div>
-<div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294158686-400cb481-754e-4900-869c-e692f42e7e71.png" alt="The Screen-Free Activity Planner" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>The Screen-Free Activity Planner</h3><p class="pnp-why">Taking the phone away leaves a gap. This fills it, so the boredom that sends your child straight back to the phone has somewhere else to go.</p></div>
-<div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294358385-bbdf63c3-f773-4d93-abaa-030bf1fbd070.png" alt="50 Simple Screen-Free Family Activities for Nigerian Homes" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>50 Simple Screen-Free Family Activities for Nigerian Homes</h3><p class="pnp-why">Time together that is not another lecture. Many need little or no money, and they help bring back the talking and laughing the phone has been replacing.</p></div>
-<div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294287817-7da14988-3fc8-49f6-98a6-9449f5921ce0.png" alt="The Screen Consumer to Screen Creator Worksheet" loading="lazy" decoding="async" referrerpolicy="no-referrer"><h3>The Screen Consumer to Screen Creator Worksheet</h3><p class="pnp-why">This is where the transformation starts. It turns something your child already loves into one small thing they can make this week, so those hours begin to count.</p></div>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">INCLUDED WITH THE BOOK</p>
+          <h2>Your 6 Bonuses, And Why Each One Matters To You</h2>
+          <div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294451786-679de647-cbde-4ad3-83c9-55b510db643b.png" alt="The 7-Day Family Screen-Time Reset" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <h3>The 7-Day Family Screen-Time Reset</h3>
+            <p class="pnp-why">You will not be improvising. One step a day takes you from your biggest problem to a first family plan, so by day seven you have a plan, not another argument.</p>
+          </div>
+          <div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294084118-1a37ab8e-9892-4a8b-b251-8b148a50d0ea.png" alt="The Family Screen-Time Agreement" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <h3>The Family Screen-Time Agreement</h3>
+            <p class="pnp-why">The rule stops being something you shout at 10 p.m. You sit down and agree it together, so there is much less to fight about when the night comes.</p>
+          </div>
+          <div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294232675-379970df-d52c-4ebf-9b1f-bca77e6a6216.png" alt="The Weekly Screen-Time Planner" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <h3>The Weekly Screen-Time Planner</h3>
+            <p class="pnp-why">Schoolwork, rest, entertainment and device boundaries all get a place in the week. “Just five minutes” has nowhere left to hide.</p>
+          </div>
+          <div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294158686-400cb481-754e-4900-869c-e692f42e7e71.png" alt="The Screen-Free Activity Planner" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <h3>The Screen-Free Activity Planner</h3>
+            <p class="pnp-why">Taking the phone away leaves a gap. This fills it, so the boredom that sends your child straight back to the phone has somewhere else to go.</p>
+          </div>
+          <div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294358385-bbdf63c3-f773-4d93-abaa-030bf1fbd070.png" alt="50 Simple Screen-Free Family Activities for Nigerian Homes" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <h3>50 Simple Screen-Free Family Activities for Nigerian Homes</h3>
+            <p class="pnp-why">Time together that is not another lecture. Many need little or no money, and they help bring back the talking and laughing the phone has been replacing.</p>
+          </div>
+          <div class="pnp-tool"><img class="pnp-img" src="https://www.image2url.com/r2/default/images/1793294287817-7da14988-3fc8-49f6-98a6-9449f5921ce0.png" alt="The Screen Consumer to Screen Creator Worksheet" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <h3>The Screen Consumer to Screen Creator Worksheet</h3>
+            <p class="pnp-why">This is where the transformation starts. It turns something your child already loves into one small thing they can make this week, so those hours begin to count.</p>
+          </div>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">READ THIS FIRST</p>
-<h2>Is This For You?</h2>
-<div class="pnp-card"><h3>This IS for you if</h3><ul class="pnp-list"><li>The phone is a daily source of arguments in your home.</li><li>Scrolling and gaming are beginning to affect schoolwork, sleep or family time.</li><li>You have collected the phone many times and want something that lasts longer than one evening.</li><li>You want your child to gain skills and self-control, not just obey.</li></ul></div>
-<div class="pnp-sage"><h3>This is NOT for you if</h3><ul><li>You want a trick that works in one night. This is not magic. You still have to parent, and you still need consistency.</li><li>Your child is in urgent danger right now. If a child is being threatened or exploited, take direct protective action and get proper professional or official help. Do not wait for an eBook.</li></ul></div>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">READ THIS FIRST</p>
+          <h2>Is This For You?</h2>
+          <div class="pnp-card">
+            <h3>This IS for you if</h3>
+            <ul class="pnp-list">
+              <li>The phone is a daily source of arguments in your home.</li>
+              <li>Scrolling and gaming are beginning to affect schoolwork, sleep or family time.</li>
+              <li>You have collected the phone many times and want something that lasts longer than one evening.</li>
+              <li>You want your child to gain skills and self-control, not just obey.</li>
+            </ul>
+          </div>
+          <div class="pnp-sage">
+            <h3>This is NOT for you if</h3>
+            <ul>
+              <li>You want a trick that works in one night. This is not magic. You still have to parent, and you still need consistency.</li>
+              <li>Your child is in urgent danger right now. If a child is being threatened or exploited, take direct protective action and get proper professional or official help. Do not wait for an eBook.</li>
+            </ul>
+          </div>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">YOUR DECISION</p>
-<h2>Why I Would Not Wait</h2>
-<p>I am not saying your child is in danger tonight. I am saying habits can become harder to change the longer they continue. Another month of the same fight, the same light under the door, the same “tomorrow”, will not make the next conversation any easier.</p>
-<p data-pnp-offer-copy>The eBook and six bonuses are currently listed at ₦4,950, compared with the stated regular price of ₦7,950. The five-hour reminder is not a checkout deadline. Selar confirms the amount you actually pay.</p>
-<div class="pnp-price">
-<p class="pnp-old" data-pnp-old>Regular price: ₦7,950</p>
-<p class="pnp-now" data-pnp-now>₦4,950</p>
-<div class="pnp-tb" data-pnp-tb>
-<p class="pnp-tl" data-pnp-lab>Your 5-hour decision reminder</p>
-<div class="pnp-segs"><div class="pnp-seg"><b data-pnp-h>05</b><span>HRS</span></div><span class="pnp-col">:</span><div class="pnp-seg"><b data-pnp-m>00</b><span>MIN</span></div><span class="pnp-col">:</span><div class="pnp-seg"><b data-pnp-s>00</b><span>SEC</span></div></div>
-</div>
-<ul class="pnp-list"><li>The complete eBook, The Phone Is Not the Problem</li><li>All 6 practical bonuses listed above</li><li>One payment. No subscription.</li><li>7-day money-back guarantee</li></ul>
-<a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Get The Book And 6 Bonuses (₦4,950)</a>
-<p class="pnp-small">You will go to Selar to complete your payment.</p>
-<p class="pnp-msg" data-pnp-msg>The timer is a personal reminder, not a price-expiry mechanism. Selar checkout shows the actual price.</p>
-</div>
-<div class="pnp-g"><i>🛡</i><div><h3>7-day money-back guarantee</h3><p>You may be seeing my name for the first time, so you should not carry all the risk. If you try the guidance and it does not help, you can request a refund within seven days of purchase. Email <a href="mailto:bellomuhammedoladimeji@gmail.com?subject=The%20Phone%20Is%20Not%20The%20Problem%20-%20Refund%20Request">bellomuhammedoladimeji@gmail.com</a> with your purchase receipt or order reference and a short summary of what you tried, such as the family agreement or reset plan. You do not need to send any private information about your child.</p></div></div>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">YOUR DECISION</p>
+          <h2>Why I Would Not Wait</h2>
+          <p>I am not saying your child is in danger tonight. I am saying habits can become harder to change the longer they continue. Another month of the same fight, the same light under the door, the same “tomorrow”, will not make the next conversation any easier.</p>
+          <p data-pnp-offer-copy>The eBook and six bonuses are currently listed at ₦4,950, compared with the stated regular price of ₦7,950. The five-hour reminder is not a checkout deadline. Selar confirms the amount you actually pay.</p>
+          <div class="pnp-price">
+            <p class="pnp-old" data-pnp-old>Regular price: ₦7,950</p>
+            <p class="pnp-now" data-pnp-now>₦4,950</p>
+            <div class="pnp-tb" data-pnp-tb>
+              <p class="pnp-tl" data-pnp-lab>Your 5-hour decision reminder</p>
+              <div class="pnp-segs">
+                <div class="pnp-seg"><b data-pnp-h>05</b><span>HRS</span></div>
+                <span class="pnp-col">:</span>
+                <div class="pnp-seg"><b data-pnp-m>00</b><span>MIN</span></div>
+                <span class="pnp-col">:</span>
+                <div class="pnp-seg"><b data-pnp-s>00</b><span>SEC</span></div>
+              </div>
+            </div>
+            <ul class="pnp-list">
+              <li>The complete eBook, The Phone Is Not the Problem</li>
+              <li>All 6 practical bonuses listed above</li>
+              <li>One payment. No subscription.</li>
+              <li>7-day money-back guarantee</li>
+            </ul>
+            <a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Get The Book And 6 Bonuses (₦4,950)</a>
+            <p class="pnp-small">You will go to Selar to complete your payment.</p>
+            <p class="pnp-msg" data-pnp-msg>The timer is a personal reminder, not a price-expiry mechanism. Selar checkout shows the actual price.</p>
+          </div>
+          <div class="pnp-g"><i>🛡</i>
+            <div>
+              <h3>7-day money-back guarantee</h3>
+              <p>You may be seeing my name for the first time, so you should not carry all the risk. If you try the guidance and it does not help, you can request a refund within seven days of purchase. Email <a href="mailto:bellomuhammedoladimeji@gmail.com?subject=The%20Phone%20Is%20Not%20The%20Problem%20-%20Refund%20Request">bellomuhammedoladimeji@gmail.com</a> with your purchase receipt or order reference and a short summary of what you tried, such as the family agreement or reset plan. You do not need to send any private information about your child.</p>
+            </div>
+          </div>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">QUESTIONS</p>
-<h2>Everything You Are Probably Wondering</h2>
-<details><summary>Isn't this just encouraging my child to spend even more time on the phone?</summary><p>No. The aim is to reduce uncontrolled scrolling and protect sleep, studies, movement and family time. Useful screen activities still need boundaries. Your child can enjoy games and videos, too; the goal is a healthier balance, not turning every minute into work.</p></details>
-<details><summary>What if my child is genuinely learning but homework or sleep is suffering?</summary><p>Then the routine needs to change. A useful skill does not cancel schoolwork or sleep. The book shows you how to make study time and bedtime non-negotiable, then give the useful activity a realistic place in the schedule. The Weekly Screen-Time Planner helps you put it on paper.</p></details>
-<details><summary>How do I know whether “I'm learning” is actually true?</summary><p>Ask for progress, not just screen hours. Can your child explain what they learned, apply it, or show a small piece of work? The book walks you through a simple Learn, Explain, Apply, Show approach without turning every evening into an interrogation.</p></details>
-<details><summary>What if my child spends hours scrolling TikTok, watching YouTube or gaming?</summary><p>Start with the habit causing the most damage. Chapter 9 shows how to introduce one calm, clear rule, reduce ordinary overuse step by step where appropriate, and use device limits when helpful. The Screen-Free Activity Planner and 50 activities give the freed-up time somewhere else to go.</p></details>
-<details><summary>What if my child gets angry or refuses every phone rule?</summary><p>I cannot promise a book will make a child obedient overnight. It does give you a more consistent approach: explain rules before the argument, agree on predictable consequences, and stop relying on shouting or last-minute threats. If safety is at risk, take protective action immediately.</p></details>
-<details><summary>But my child needs the phone for school assignments. How do I restrict it?</summary><p>School tools should remain available. The book explains how to separate schoolwork from entertainment during study periods and use parent-controlled limits where possible. You can ask what assignment was finished rather than just how long the phone was used.</p></details>
-<details><summary>What if my teenager hides apps or there are serious online safety issues?</summary><p>The guide covers trust, privacy, supervision and what to do when something harmful has happened online. But a real threat, exploitation or immediate danger is not a situation to manage with an eBook alone. Protect your child and contact appropriate professional or official help.</p></details>
-<details><summary>My child is already a teenager. Is it too late?</summary><p>No. There is a dedicated approach for ages 12–16, including privacy, late-night use, social media and earning independence. The book also contains guidance for younger children. You work with your child's age and current habits rather than using the same rule forever.</p></details>
-<details><summary>I don't understand coding or technology. Can I still use this?</summary><p>Yes. You do not need to teach coding. You need to ask useful questions, notice progress, set boundaries and listen. The guide explains the parenting system in everyday language and points you towards device controls where they are appropriate.</p></details>
-<details><summary>What if my child has no interest in coding or creating content?</summary><p>Do not force it. A child may prefer football, drawing, writing, fashion, cooking or something offline. The point is to support a real interest and reduce mindless use, not to turn every child into a programmer or content creator.</p></details>
-<details><summary>What if we share one phone or I have children of different ages?</summary><p>The principles still apply. Agree on when the shared device is used and what each session is for. For several children, the household can have a few common rules while screen privileges change with age, needs and responsibility.</p></details>
-<details><summary>Will I need to buy another device, expensive apps or subscriptions?</summary><p>No extra device or paid subscription is needed to begin the core family exercises. Several of the included screen-free activities cost little or nothing. Online lessons may still use your usual mobile data, so the book encourages realistic choices for your home and budget.</p></details>
-<details><summary>I'm busy. How much time will I need to implement this?</summary><p>You do not have to change everything in one weekend. The 7-Day Family Screen-Time Reset gives you one manageable step at a time. Begin with the habit hurting your home most, use the agreement to make the rule clear, then review what is working.</p></details>
-<details><summary>How soon will I see a difference? Will everything be fixed in seven days?</summary><p>Seven days is a starting plan, not a promise of a perfect child. In the first week you can identify the main problem, agree on a boundary and begin a routine. Lasting change depends on your child's needs, your consistency and how you adjust the plan over time.</p></details>
-<details><summary>What exactly am I buying, and how will I receive it?</summary><p>It is a digital product, not a printed book. The offer contains the complete eBook and six bonuses: the 7-Day Reset, Family Agreement, Weekly Planner, Screen-Free Activity Planner, 50 Family Activities and Screen Consumer to Screen Creator Worksheet. Payment is through Selar. Please check the product's delivery and access details before paying; if anything is unclear, email <a href="mailto:bellomuhammedoladimeji@gmail.com">bellomuhammedoladimeji@gmail.com</a> for clarification.</p></details>
-<details><summary>How does the seven-day money-back guarantee work?</summary><p>If you try the guidance and it does not help, email <a href="mailto:bellomuhammedoladimeji@gmail.com?subject=The%20Phone%20Is%20Not%20The%20Problem%20-%20Refund%20Request">bellomuhammedoladimeji@gmail.com</a> within seven days of purchase. Include your receipt or order reference and a brief note about which steps you tried. There is no need to send private information about your child.</p></details>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">QUESTIONS</p>
+          <h2>Everything You Are Probably Wondering</h2>
+          <details>
+            <summary>Isn't this just encouraging my child to spend even more time on the phone?</summary>
+            <p>No. The aim is to reduce uncontrolled scrolling and protect sleep, studies, movement and family time. Useful screen activities still need boundaries. Your child can enjoy games and videos, too; the goal is a healthier balance, not turning every minute into work.</p>
+          </details>
+          <details>
+            <summary>What if my child is genuinely learning but homework or sleep is suffering?</summary>
+            <p>Then the routine needs to change. A useful skill does not cancel schoolwork or sleep. The book shows you how to make study time and bedtime non-negotiable, then give the useful activity a realistic place in the schedule. The Weekly Screen-Time Planner helps you put it on paper.</p>
+          </details>
+          <details>
+            <summary>How do I know whether “I'm learning” is actually true?</summary>
+            <p>Ask for progress, not just screen hours. Can your child explain what they learned, apply it, or show a small piece of work? The book walks you through a simple Learn, Explain, Apply, Show approach without turning every evening into an interrogation.</p>
+          </details>
+          <details>
+            <summary>What if my child spends hours scrolling TikTok, watching YouTube or gaming?</summary>
+            <p>Start with the habit causing the most damage. Chapter 9 shows how to introduce one calm, clear rule, reduce ordinary overuse step by step where appropriate, and use device limits when helpful. The Screen-Free Activity Planner and 50 activities give the freed-up time somewhere else to go.</p>
+          </details>
+          <details>
+            <summary>What if my child gets angry or refuses every phone rule?</summary>
+            <p>I cannot promise a book will make a child obedient overnight. It does give you a more consistent approach: explain rules before the argument, agree on predictable consequences, and stop relying on shouting or last-minute threats. If safety is at risk, take protective action immediately.</p>
+          </details>
+          <details>
+            <summary>But my child needs the phone for school assignments. How do I restrict it?</summary>
+            <p>School tools should remain available. The book explains how to separate schoolwork from entertainment during study periods and use parent-controlled limits where possible. You can ask what assignment was finished rather than just how long the phone was used.</p>
+          </details>
+          <details>
+            <summary>What if my teenager hides apps or there are serious online safety issues?</summary>
+            <p>The guide covers trust, privacy, supervision and what to do when something harmful has happened online. But a real threat, exploitation or immediate danger is not a situation to manage with an eBook alone. Protect your child and contact appropriate professional or official help.</p>
+          </details>
+          <details>
+            <summary>My child is already a teenager. Is it too late?</summary>
+            <p>No. There is a dedicated approach for ages 12–16, including privacy, late-night use, social media and earning independence. The book also contains guidance for younger children. You work with your child's age and current habits rather than using the same rule forever.</p>
+          </details>
+          <details>
+            <summary>I don't understand coding or technology. Can I still use this?</summary>
+            <p>Yes. You do not need to teach coding. You need to ask useful questions, notice progress, set boundaries and listen. The guide explains the parenting system in everyday language and points you towards device controls where they are appropriate.</p>
+          </details>
+          <details>
+            <summary>What if my child has no interest in coding or creating content?</summary>
+            <p>Do not force it. A child may prefer football, drawing, writing, fashion, cooking or something offline. The point is to support a real interest and reduce mindless use, not to turn every child into a programmer or content creator.</p>
+          </details>
+          <details>
+            <summary>What if we share one phone or I have children of different ages?</summary>
+            <p>The principles still apply. Agree on when the shared device is used and what each session is for. For several children, the household can have a few common rules while screen privileges change with age, needs and responsibility.</p>
+          </details>
+          <details>
+            <summary>Will I need to buy another device, expensive apps or subscriptions?</summary>
+            <p>No extra device or paid subscription is needed to begin the core family exercises. Several of the included screen-free activities cost little or nothing. Online lessons may still use your usual mobile data, so the book encourages realistic choices for your home and budget.</p>
+          </details>
+          <details>
+            <summary>I'm busy. How much time will I need to implement this?</summary>
+            <p>You do not have to change everything in one weekend. The 7-Day Family Screen-Time Reset gives you one manageable step at a time. Begin with the habit hurting your home most, use the agreement to make the rule clear, then review what is working.</p>
+          </details>
+          <details>
+            <summary>How soon will I see a difference? Will everything be fixed in seven days?</summary>
+            <p>Seven days is a starting plan, not a promise of a perfect child. In the first week you can identify the main problem, agree on a boundary and begin a routine. Lasting change depends on your child's needs, your consistency and how you adjust the plan over time.</p>
+          </details>
+          <details>
+            <summary>What exactly am I buying, and how will I receive it?</summary>
+            <p>It is a digital product, not a printed book. The offer contains the complete eBook and six bonuses: the 7-Day Reset, Family Agreement, Weekly Planner, Screen-Free Activity Planner, 50 Family Activities and Screen Consumer to Screen Creator Worksheet. Payment is through Selar. Please check the product's delivery and access details before paying; if anything is unclear, email <a href="mailto:bellomuhammedoladimeji@gmail.com">bellomuhammedoladimeji@gmail.com</a> for clarification.</p>
+          </details>
+          <details>
+            <summary>How does the seven-day money-back guarantee work?</summary>
+            <p>If you try the guidance and it does not help, email <a href="mailto:bellomuhammedoladimeji@gmail.com?subject=The%20Phone%20Is%20Not%20The%20Problem%20-%20Refund%20Request">bellomuhammedoladimeji@gmail.com</a> within seven days of purchase. Include your receipt or order reference and a brief note about which steps you tried. There is no need to send private information about your child.</p>
+          </details>
+        </section>
 
-<section class="pnp-sec">
-<p class="pnp-lab">ONE LAST THING</p>
-<h2>You Do Not Have To Keep Doing It Alone</h2>
-<p>You have been the only one holding the line. Saying the same sentence. Feeling like the bad person.</p>
-<p>You do not have to choose between a quiet house and a child who grows. You can have both. It starts with giving those hours somewhere to go, and with a few rules you agree on while everyone is calm.</p>
-<p>One day your child will leave your house with a phone in their hand. You can leave them with a habit of scrolling. Or you can leave them with skills, self-control, and something they made that makes you proud.</p>
-<p>That does not start at eighteen. It starts with what you do this week.</p>
-<div class="pnp-tb" data-pnp-tb>
-<p class="pnp-tl" data-pnp-lab>Your 5-hour decision reminder</p>
-<div class="pnp-segs"><div class="pnp-seg"><b data-pnp-h>05</b><span>HRS</span></div><span class="pnp-col">:</span><div class="pnp-seg"><b data-pnp-m>00</b><span>MIN</span></div><span class="pnp-col">:</span><div class="pnp-seg"><b data-pnp-s>00</b><span>SEC</span></div></div>
-</div>
-<a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Start Turning Those Hours Around (₦4,950)</a>
-<p class="pnp-small">You will go to Selar to complete your payment. Covered by the 7-day money-back guarantee.</p>
-</section>
+        <section class="pnp-sec">
+          <p class="pnp-lab">ONE LAST THING</p>
+          <h2>You Do Not Have To Keep Doing It Alone</h2>
+          <p>You have been the only one holding the line. Saying the same sentence. Feeling like the bad person.</p>
+          <p>You do not have to choose between a quiet house and a child who grows. You can have both. It starts with giving those hours somewhere to go, and with a few rules you agree on while everyone is calm.</p>
+          <p>One day your child will leave your house with a phone in their hand. You can leave them with a habit of scrolling. Or you can leave them with skills, self-control, and something they made that makes you proud.</p>
+          <p>That does not start at eighteen. It starts with what you do this week.</p>
+          <div class="pnp-tb" data-pnp-tb>
+            <p class="pnp-tl" data-pnp-lab>Your 5-hour decision reminder</p>
+            <div class="pnp-segs">
+              <div class="pnp-seg"><b data-pnp-h>05</b><span>HRS</span></div>
+              <span class="pnp-col">:</span>
+              <div class="pnp-seg"><b data-pnp-m>00</b><span>MIN</span></div>
+              <span class="pnp-col">:</span>
+              <div class="pnp-seg"><b data-pnp-s>00</b><span>SEC</span></div>
+            </div>
+          </div>
+          <a class="pnp-btn" data-pnp-btn data-late="See Current Price On Selar" href="https://selar.com/3j768222s7">Start Turning Those Hours Around (₦4,950)</a>
+          <p class="pnp-small">You will go to Selar to complete your payment. Covered by the 7-day money-back guarantee.</p>
+        </section>
 
-</div>
-<div class="pnp-stick" data-pnp-stick><p><s data-pnp-sold>₦7,950</s><br><b data-pnp-snow>₦4,950</b></p><a data-pnp-btn data-late="See Price On Selar" href="https://selar.com/3j768222s7">Get It Now (₦4,950)</a></div>
-</div>
-<script>
-(function(){
-"use strict";
-var root=document.querySelector(".pnp");
-if(!root||root.getAttribute("data-pnp-ready")==="1"){return;}
-root.setAttribute("data-pnp-ready","1");
-
-// Five-hour personal reminder, independent of Selar checkout pricing.
-// A new key avoids carrying over deadlines from an older promotional countdown.
-var KEY="pnp_decision_reminder_5h_v1";
-var DURATION_MS=5*60*60*1000;
-var deadline=0;
-try{
-  var saved=window.localStorage.getItem(KEY);
-  deadline=saved===null?0:Number(saved);
-  if(!isFinite(deadline)||deadline<=0){
-    deadline=Date.now()+DURATION_MS;
-    window.localStorage.setItem(KEY,String(deadline));
-  }
-}catch(err){
-  deadline=Date.now()+DURATION_MS; // Storage-disabled browsers: timer lasts for this page visit.
-}
-
-function q(selector){return root.querySelectorAll(selector);}
-function set(selector,value){
-  var nodes=q(selector);
-  for(var i=0;i<nodes.length;i++){nodes[i].textContent=value;}
-}
-function two(n){return n<10?"0"+n:String(n);}
-var timerId=0;
-function tick(){
-  var seconds=Math.max(0,Math.ceil((deadline-Date.now())/1000));
-  set("[data-pnp-h]",two(Math.floor(seconds/3600)));
-  set("[data-pnp-m]",two(Math.floor((seconds%3600)/60)));
-  set("[data-pnp-s]",two(seconds%60));
-  if(seconds>0){return;}
-
-  if(timerId){window.clearInterval(timerId);timerId=0;}
-  set("[data-pnp-lab]","Your five-hour reminder has finished");
-  set("[data-pnp-msg]","This reminder does not expire the offer or change the price. Selar checkout confirms the amount charged.");
-}
-tick();
-if(deadline>Date.now()){
-  timerId=window.setInterval(tick,1000);
-}
-document.addEventListener("visibilitychange",tick);
-
-var sticky=q("[data-pnp-stick]")[0];
-function updateSticky(){
-  if(sticky){sticky.classList.toggle("on",window.pageYOffset>700);}
-}
-window.addEventListener("scroll",updateSticky,{passive:true});
-updateSticky();
-})();
-</script>
-</body>
+      </div>
+      <div class="pnp-stick" data-pnp-stick>
+        <p><s data-pnp-sold>₦7,950</s><br><b data-pnp-snow>₦4,950</b></p>
+        <a data-pnp-btn data-late="See Price On Selar" href="https://selar.com/3j768222s7">Get It Now (₦4,950)</a></div>
+    </div>
+    <script src="./script.js" defer></script>
+  </body>
 </html>
