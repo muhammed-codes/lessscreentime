@@ -9,6 +9,11 @@
       "source": "/screen-time-skills/",
       "destination": "/screen-time-skills",
       "permanent": true
+    },
+    {
+      "source": "/screen-time/thank-you/",
+      "destination": "/screen-time/thank-you",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -19,6 +24,10 @@
     {
       "source": "/screen-time-skills",
       "destination": "/screen-time-skills/index.html"
+    },
+    {
+      "source": "/screen-time/thank-you",
+      "destination": "/screen-time/thank-you/index.html"
     }
   ]
 }
