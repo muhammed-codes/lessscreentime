@@ -63,4 +63,4 @@ After pushing to the connected `main` branch, Vercel should deploy the new versi
 - The landing pages keep their distinct parenting-product colour treatment; only their metadata and favicon references were updated.
 - All pages define canonical URLs, descriptions, Open Graph/Twitter preview tags, and structured data. Three PNG sharing cards are hosted under `/assets`.
 - The favicon is a simple Olvarel terracotta O monogram. If the final artwork differs from this code-drawn mark, replace `/assets/olvarel-mark.svg` and its generated PNG variants.
-- Meta Pixel `1151904217258138` is configured only on `/screen-time-skills` (PageView and CheckoutClick). Selar handles actual checkout and purchase events. Review required consent and privacy notices before expanding tracking.
+- Meta Pixel `1151904217258138` is configured only on `/screen-time` (PageView and CheckoutClick). It must be connected to the correct ad account under Meta Business Settings. Selar handles actual checkout and purchase events. Review required consent and privacy notices before expanding tracking.
