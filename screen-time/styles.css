@@ -646,3 +646,16 @@ body {
     padding: 11px 10px;
   }
 }
+
+/* Advertising platform independence notice shown below the sales copy. */
+.pnp .pnp-disclaimer {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 24px 20px 32px;
+  border-top: 1px solid #E6DFD0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.65;
+  color: #55524D;
+}
+.pnp .pnp-disclaimer p { margin: 0; }
